@@ -22,10 +22,11 @@ sudo apt-get -y install ranger urxvt tmux tmuxp tmate
 echo "Installing pyenv"
 curl https://pyenv.run | bash
 # autorun pyenv
-# echo "export PATH=\"$HOME/.pyenv/bin:$PATH\"" >> $shellrc
-# echo "eval \"$(pyenv init -)\""               >> $shellrc
-# echo "eval \"$(pyenv virtualenv-init -)\""    >> $shellrc
-
+echo '#source pyenv'
+echo 'export PATH="$HOME/.pyenv/bin:$PATH"' >> shellrc
+echo 'eval "$(pyenv init -)"' >> shellrc
+echo 'eval "$(pyenv virtualenv-init -)"' >> shellrc
+source shellrc
 
 echo "Installing Chrome"
 if [[ $(getconf LONG_BIT) = "64" ]]
