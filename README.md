@@ -11,9 +11,15 @@ Included:
   - i3, py3status
   - peynv
 
-## Start instalation 
+## Start instalation
+ 
+```sh
+$ sudo sh -c "$(curl 'https://raw.githubusercontent.com/git-alice/liniwa/master/install.sh')"
+```
+
+or 
 
 ```sh
 $ git clone https://github.com/git-alice/liniwa
-$ sudo bash install.sh
+$ sudo bash liniwa/install.sh
 ```
